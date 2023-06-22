@@ -140,9 +140,9 @@ button {
 #game {
   font-size: 30px;
   position: fixed;
+  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 100;
   color: rgb(21, 19, 19);
   opacity: 1;
@@ -167,27 +167,27 @@ button {
   position: fixed;
   top: 55%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
   z-index: 100;
   font-size: 100px;
   color: rgb(245, 8, 8);
-  animation: rotate 4s linear;
+  animation: rotate 1s linear;
 }
 @keyframes rotate {
   0% {
-    transform: rotate(0deg);
+    transform: scaleX(0.1) scaleY(0.1);
   }
   25% {
-    transform: rotate(90deg);
+    transform: scaleX(0.3) scaleY(0.3);
   }
   50% {
-    transform: rotate(180deg);
+    transform: scaleX(0.6) scaleY(0.6);
   }
   75% {
-    transform: rotate(270deg);
+    transform: scaleX(0.8) scaleY(0.8);
   }
   100% {
-    transform: rotate(360deg);
+    transform: scaleX(1) scaleY(1);
   }
 }
 #gameover {
