@@ -1,0 +1,239 @@
+body {
+  margin: 0px;
+  background: rgb(188, 182, 182);
+  padding: 0px;
+}
+* {
+  box-sizing: border-box;
+}
+#root {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#navbar {
+  height: 80px;
+  width: 100%;
+  background: rgb(35, 49, 178);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+h1 {
+  margin: 0px;
+}
+#section {
+  width: 100vw;
+  height: 85vh;
+  border: 3px solid rgb(128, 123, 159);
+  margin: 10px 0px;
+  background: rgb(64, 222, 82);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+#showdetails {
+  width: 80%;
+  border: 1px solid rgb(198, 149, 116);
+  display: flex;
+}
+#board {
+  width: 40%;
+  border: 1px solid rgb(226, 137, 158);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.row {
+  position: relative;
+  display: flex;
+}
+#turn {
+  position: absolute;
+  top: -45px;
+  left: 0px;
+}
+
+.sqaurebox {
+  height: 69px;
+  width: 69px;
+  margin: 10px 3px;
+  border: 2px solid rgb(245, 10, 10);
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  border-radius: 30px;
+}
+
+.sqaurebox :hover {
+  background: #afa2a2;
+}
+#showdetails {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(110, 110, 96);
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+#table-box {
+  height: 50%;
+  width: 80%;
+  border: 1px solid rgb(122, 101, 101);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-radius: 30px;
+}
+#table {
+  height: 100%;
+  background: rgb(188, 182, 182);
+  width: 100%;
+  border: 1px solid rgb(154, 87, 87);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 20px;
+  padding: 15px;
+}
+#btns {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#startGame {
+  background: #000;
+  color: white;
+}
+#tictoeimg {
+  width: 100vw;
+  height: 90vh;
+  opacity: 0.5;
+}
+button {
+  font-size: 20px;
+  height: 30px;
+  width: 120px;
+  margin-top: 10px;
+}
+#reset {
+  background: #000;
+  color: white;
+}
+#Exit {
+  background: red;
+  color: white;
+}
+#game {
+  font-size: 30px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  color: rgb(21, 19, 19);
+  opacity: 1;
+  font-size: 30px;
+}
+#rounds {
+  position: absolute;
+  font-size: 30px;
+  color: red;
+  left: 0px;
+  top: -40px;
+  /* transform: translate(-50%,-50%); */
+  opacity: 0.78;
+}
+#emoji {
+  font-size: 45px;
+  position: absolute;
+  left: 45px;
+  top: 41px;
+}
+#winner {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  font-size: 100px;
+  color: rgb(245, 8, 8);
+  animation: rotate 4s linear;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#gameover {
+  position: fixed;
+  font-size: 30px;
+  color: red;
+  /* left: 50%; */
+  /* top: 50%; */
+  /* transform: translate(-50%,-50%); */
+  opacity: 0.78;
+  z-index: 100;
+}
+
+@media (max-width: 754px) {
+  #section {
+    flex-direction: column;
+    width: 95vw;
+    align-items: center;
+  }
+  #board {
+    width: 80vw;
+    margin-top: 50px;
+  }
+  #table-box {
+    width: 95%;
+    height: fit-content;
+    font-size: 10px;
+  }
+  #winner {
+    font-size: 40px;
+  }
+  .sqaurebox {
+    width: 70px;
+    height: 70px;
+    color: red;
+    border-radius: 20px;
+  }
+  #showdetails {
+    width: 95%;
+    height: fit-content;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  #rounds {
+    margin: 10px 0px;
+    font-size: 20px;
+  }
+}
