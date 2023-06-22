@@ -1,5 +1,5 @@
 import Navbar from "./Components/navbar";
-import tictoeimg from "./imagestic.jpg"
+import tictoeimg from "./Components/imagestic.jpg"
 import "./Components/styleCommon.css";
 import Section from "./Components/section";
 import { useEffect, useState } from "react";
@@ -10,6 +10,7 @@ const style1 = {
 const style2 = {
   display: "block",
 };
+
 
 const App = () => {
   const [name1, setName1] = useState("");
