@@ -172,6 +172,7 @@ button {
   font-size: 100px;
   color: rgb(245, 8, 8);
   animation: rotate 1s linear;
+  font-size: 80px;
 }
 @keyframes rotate {
   0% {

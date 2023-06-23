@@ -21,7 +21,7 @@ const ShowGameDetails = (props) => {
 
         <div id="btns">
           <button id="reset" onClick={props.updateState} >
-            Restart
+            Reset
           </button>
         </div>
       </div>
