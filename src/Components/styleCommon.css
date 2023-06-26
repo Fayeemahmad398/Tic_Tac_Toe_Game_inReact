@@ -167,7 +167,7 @@ button {
   position: fixed;
   top: 55%;
   left: 50%;
-  /* transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%);
   z-index: 100;
   font-size: 100px;
   color: rgb(245, 8, 8);
@@ -235,6 +235,6 @@ button {
   }
   #rounds {
     margin: 10px 0px;
-    font-size: 20px;
+    font-size: 16px;
   }
 }
